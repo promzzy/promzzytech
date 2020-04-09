@@ -35,7 +35,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="menu-content sticky-top">
+		<div class="menu-content">
 			<span class="logo ml-5">
 				<h4 class="font-weight-bold">Fin-tech</h4>
 			</span>
@@ -48,6 +48,7 @@
 				<a href="#">Blog</a>
 				<a href="#">Contact</a>
 			</nav>
+			<div class="menu-toggle"> <i class="fas fa-bars" alia-hidden="true"></i> </div>
 		</div>
 	</header>
 	<div>
@@ -333,7 +334,7 @@
 	<div class="row mt-5">
 	<div class="row col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex mb-5">
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-		<img src="images/20.jpg" style="height: 250px; width: 250px">
+		<img src="images/20.jpg" style="height: 250px; width: 250px;">
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	<span class="card-body">
@@ -347,7 +348,7 @@
 	</div>
 	<div class="row col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex mb-5">
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-		<img src="images/22.jpg" style="height: 250px; width: 250px">
+		<img src="images/22.jpg" style="height: 250px; width: 250px;">
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	<span class="card-body">
@@ -361,7 +362,7 @@
 	</div>
 		<div class=" row col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex mb-5">
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-		<img src="images/23.jpg" style="height: 250px; width: 250px">
+		<img src="images/23.jpg" style="height: 250px; width: 250px;">
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	<span class="card-body">
@@ -375,7 +376,7 @@
 	</div>
 		<div class=" row col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex mb-5">
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-		<img src="images/24.jpg" style="height: 250px; width: 250px">
+		<img src="images/24.jpg" style="height: 250px; width: 250px;">
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	<span class="card-body">
@@ -667,5 +668,12 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/mdb.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('nav').toggleclass('active')
+			})
+		})
+	</script>
 </body>
 </html>
