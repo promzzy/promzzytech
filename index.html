@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
 	<title>Home</title>
 <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -10,8 +11,8 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="topbar z-depth-3">
-		<div class="address">
+	<header class="topbar">
+		<div class="address sticky-top z-depth-2">
 			<div class="d-flex align-items-center" >
 				<span class="d-flex align-items-center justify-content-center" style="height: 35px; width: 35px; border-radius: 50%; background-color: #000080;">
 				<i class="fas fa-map white-text"></i>
@@ -35,23 +36,26 @@
 				</p>
 			</div>
 		</div>
-		<div class="menu-content">
-			<span class="logo ml-5">
-				<h4 class="font-weight-bold">Fin-tech</h4>
-			</span>
-			<nav class="mr-5">
-				<a href="index.html" class="active">Home</a>
-				<a href="#">About</a>
-				<a href="#">Teacher</a>
-				<a href="#">Courses</a>
-				<a href="#">Pricing</a>
-				<a href="#">Blog</a>
-				<a href="#">Contact</a>
-			</nav>
-			<div class="menu-toggle"> <i class="fas fa-bars" alia-hidden="true"></i> </div>
-		</div>
+		<div class="menu">
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars"></i>
+			</label>
+			<label class="logo">PromzzYtech</label>
+			<ul>
+				<li><a class="active" href="#">Home</a> </li>
+				<li><a href="#">About</a> </li>
+				<li><a href="#">Courses</a> </li>
+				<li><a href="#">Pricing</a> </li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="start.html" class="" style="background: green;">Getstarted</a> </li>
+			</ul>
+		</nav>
+			 </div>
 	</header>
-	<div>
+	<div class="my-carousel" style="z-index: -1;">
 	<!--Carousel Wrapper-->
 <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
   <!--Indicators-->
@@ -107,9 +111,9 @@
 				<i class="fas fa-laptop-code blue-text fa-2x"></i>
 			</span>
 		</div>
-		<span class="white-text d-flex row text-center justify-content-center mt-5">
-				<h3>Website Development</h3>
-				<p>We build any kind of webite at affordable price</p>
+		<span class="card-body white-text d-flex row text-center justify-content-center mt-5">
+				<h3 class="card-title h3-responsive">Website Development</h3>
+				<p class="card-text">We build any kind of webite at affordable price</p>
 			</span>
 		</div>
 		<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12  lib ">
@@ -118,20 +122,20 @@
 				<i class="fas fa-laptop-code blue-text fa-2x"></i>
 			</span>
 			</div>
-			<span class="white-text d-flex row text-center justify-content-center mt-5">
-				<h3>Software Development</h3>
-				<p>Accounting software,CBT etc</p>
+			<span class="card-body white-text d-flex row text-center justify-content-center mt-5">
+				<h3 class="card-title h3-responsive">Software Development</h3>
+				<p class="card-text">Accounting software,CBT etc</p>
 			</span>
 		</div>
 		<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12  cert ">
 			<div class="d-flex justify-content-center">
 			<span class="icon-bg"  style="margin-top: -60px; z-index: 500";>
-				<i class="fas fa-laptop-code blue-text fa-2x"></i>
+				<i class="fas fa-mobile blue-text fa-3x"></i>
 			</span>
 			</div>
-			<span class="white-text d-flex row text-center justify-content-center mt-5">
-				<h3>Mobile Application</h3>
-				<p>We develop mobile applications for Android and iOS device.</p>
+			<span class="card-body white-text d-flex row text-center justify-content-center mt-5">
+				<h3 class="card-title h3-responsive">Mobile Application</h3>
+				<p class="card-text">We develop mobile applications for Android and iOS device.</p>
 			</span>
 		</div>
 		<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 edu ">
@@ -140,9 +144,10 @@
 				<i class="fas fa-laptop-code blue-text fa-2x"></i>
 			</span>
 			</div>
-			<span class="white-text d-flex row text-center justify-content-center mt-5">
-				<h3>Digital Marketing</h3>
-				<p>Working with your budget to promote your work online.</p>
+			<span class="card-body white-text d-flex row text-center justify-content-center mt-5">
+				<h3 class="card-title h3-responsive">Graphic Design</h3>
+				<p class="card-text">Image Creation,Video Making, Image and Video Editing,Voice over etc
+			</p>
 			</span>
 		</div>
 		
@@ -153,10 +158,9 @@
 	<div class="row">
 		<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 			<div class="card-body">
-				<h3 class="card-title" style="text-transform: capitalize;">What we offer</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
+				<h3 class="card-title h3-responsive" style="text-transform: capitalize;">What we offer</h3>
+				<p class="card-text">
+					We specialize in building reliable solutions that work. We also train individuals and organizations on cutting edge technology. It takes more than just a brilliant idea. It requires excellent execution.
 				</p>
 			</div>
 			<div class="row pl-3">
@@ -168,7 +172,7 @@
 					</div>
 					<div class="">
 					<div class="card-body">
-						<h4 class="card-title h4-responsive"> regular classes</h4>
+						<h4 class="card-title h4-responsive">Online courses</h4>
 						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut</p>
 					</div>
@@ -234,11 +238,11 @@
 
 	</div>
 	<div class="card-body col-lg-5 col-md-5 col-sm-12 col-xs-12 pr-3" style="background-color: #f1f1f1;">
-			<h3 class="card-title mt-4" style="text-transform: capitalize;">
+			<h3 class="card-title mt-4 h3-responsive" style="text-transform: capitalize;">
 			about us
 		</h3>
 			<p class="card-text">
-			We at P-TECH design and build exquisite Websites,Software and Mobile Applications that would suit YOU. With well experienced hands on your work, you can trust us with stunning front-end designs that are user friendly and contents that would attract users. Designs are top notch Unbeatable Value Exceptional design.
+			We at PromzzY-Tech design and build exquisite Websites,Software and Mobile Applications that would suit YOU. With well experienced hands on your work, you can trust us with stunning front-end designs that are user friendly and contents that would attract users. Designs are top notch Unbeatable Value Exceptional design.
 			</p>
 			<a href="#" class="btn btn-orange" style="border-radius: 35px;"> Read More</a>
 		</div>
@@ -247,11 +251,11 @@
 
 <section>
 	<div class="banner-teach d-flex align-items-center justify-content-center">
-		<div class=" ml-2 white-text mr-3">
-		<h3 class="" style="text-transform: capitalize;">
+		<div class="why-us card-body ml-2 white-text mr-3">
+		<h3 class="card-title h3-responsive" style="flex-wrap: wrap; text-transform: capitalize;">
 			Why Choose Us?
 		</h3>
-		<p>
+		<p class="card-text">
 			<ul>
 				<li>100% Safe and Secure Websites, Software and App made by us.</li>
 				<li>Affordable Price.</li>
@@ -262,15 +266,14 @@
 		</p>
 		</div>
 		<div>
-			<a href="#" class="btn btn-orange" style="border-radius: 35px;">contact us</a>
+			<a href="#" class="btn btn-orange" style="border-radius: 35px; margin-right: 100px;">contact us</a>
 		</div>
-		
 	</div>
 </section>
 
 <section>
 	<div class="text-center">
-		<h3 class="m-3">
+		<h3 class="m-3 h3-responsive">
 			<span class="text-primary"> Certified </span> <span class="text-warning"> Teachers </span>
 		</h3>
 		<p class="card-text">
@@ -285,7 +288,7 @@
 					
 				</div>
 					<div class="text-center">
-						<h5 class="mt-2 font-weight-bold" style="text-transform: capitalize;">bianca wilson</h5>
+						<h5 class="mt-2 font-weight-bold h5-responsive" style="text-transform: capitalize;">bianca wilson</h5>
 						<p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labo</p>
 					</div>
@@ -294,7 +297,7 @@
 			<div class="wilson" style="background: url(images/2.jpg); background-position: center; background-size: cover;">
 			</div>
 			<div class="text-center">
-				<h5 class="mt-2 font-weight-bold" style="text-transform: capitalize;">bianca wilson</h5>
+				<h5 class="mt-2 font-weight-bold h5-responsive" style="text-transform: capitalize;">bianca wilson</h5>
 				<p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt</p>
 			</div>
@@ -304,7 +307,7 @@
 			<div class="wilson" style="background: url(images/2.jpg); background-position: center; background-size: cover;">
 			</div>
 			<div class="text-center">
-				<h5 class="mt-2 font-weight-bold" style="text-transform: capitalize;">bianca wilson</h5>
+				<h5 class="mt-2 font-weight-bold h5-responsive" style="text-transform: capitalize;">bianca wilson</h5>
 				<p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt</p>
 			</div>
@@ -313,7 +316,7 @@
 			<div class="wilson" style="background: url(images/2.jpg); background-position: center; background-size: cover;">
 			</div>
 			<div class="text-center">
-				<h5 class="mt-2 font-weight-bold" style="text-transform: capitalize;">bianca wilson</h5>
+				<h5 class="mt-2 font-weight-bold h5-responsive" style="text-transform: capitalize;">bianca wilson</h5>
 				<p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt</p>
 			</div>
@@ -324,7 +327,7 @@
 
 <section>
 	<div class="text-center">
-		<h3 class="card-title mt-2 font-weight-bold" style="text-transform: uppercase; justify-content: space-around;">
+		<h3 class="card-title mt-2 font-weight-bold h3-responsive" style="text-transform: uppercase; justify-content: space-around;">
 			<span class="text-primary">our training</span> <span class="text-warning">courses</span>
 		</h3>
 		<p>Building a better world, one course at a time
@@ -338,7 +341,7 @@
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	<span class="card-body">
-		<h4 class="card-title column text-primary" style="text-transform: capitalize;">
+		<h4 class="card-title column text-primary h4-responsive" style="text-transform: capitalize;">
 			website development
 		</h4>
 		<p class="card-text">Learn the Basics, every web developer must have a basic understanding of HTML, CSS, and JavaScript. responsive Web Design is used in all types of modern web development.
@@ -352,7 +355,7 @@
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	<span class="card-body">
-		<h4 class="card-title column text-primary" style="text-transform: capitalize;">
+		<h4 class="card-title column text-primary h4-responsive" style="text-transform: capitalize;">
 			software development
 		</h4>
 		<p class="card-text">Learn Basic, Advance using Java, Python,Vb.net
@@ -366,7 +369,7 @@
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	<span class="card-body">
-		<h4 class="card-title column text-primary" style="text-transform: capitalize;">
+		<h4 class="card-title column text-primary h4-responsive" style="text-transform: capitalize;">
 			mobile app development
 		</h4>
 		<p class="card-text">Learn basic knowledge on IOS and Andriod app development.
@@ -380,7 +383,7 @@
 	</div>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	<span class="card-body">
-		<h4 class="card-title column text-primary" style="text-transform: capitalize;">
+		<h4 class="card-title column text-primary h4-responsive" style="text-transform: capitalize;">
 			graphic design
 		</h4>
 		<p class="card-text">Image Creation,Video Making, Image and Video Editing,Voice over etc
@@ -407,7 +410,7 @@
 <section>
 	<div class="testimonial" style="height:auto;">
 		<div class="text-center">
-			<h3 class="mt-4">
+			<h3 class="mt-4 h3-responsive">
 				<span class="text-primary">what people</span> <span class="text-warning">say about us</span>
 			</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod
@@ -424,21 +427,21 @@
     <div class="carousel-item active">
       <img src="images/c.jpg" class="d-block w-100" height="300" alt="...">
       <div class="carousel-caption d-lg-block d-sm-block d-xs-block d-md-block" style="color: black">
-        <h5>First slide label</h5>
+        <h5 class="h5-responsive">First slide label</h5>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="images/a.jpg" class="d-block w-100" height="300" alt="...">
       <div class="carousel-caption d-lg-block d-sm-block d-xs-block d-md-block" style="color: black;">
-        <h5>Second slide label</h5>
+        <h5 class="h5-responsive">Second slide label</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="images/b.jpg" class="d-block w-100" height="300" alt="...">
       <div class="carousel-caption d-lg-block d-sm-block d-xs-block d-md-block" style="color: black;">
-        <h5>Third slide label</h5>
+        <h5 class="h5-responsive">Third slide label</h5>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       </div>
     </div>
@@ -460,8 +463,8 @@
 		<div class="container">
 		<div class="card-container white-text col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: blue; text-transform: capitalize; height: 600px;">
 			<div class="text-center">
-			<h3 class="card-title" style="text-transform: capitalize;">
-				request for a tutor
+			<h3 class="card-title h3-responsive" style="text-transform: capitalize;">
+				Message Box
 			</h3>
 			<p class="card-text">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod
@@ -492,28 +495,15 @@
 			</div>
 			<div class="form-row">
 				<div class="form-group col">
-					<label>select course</label>
-					<select class="form-control">
-						<option selected="">courses</option>
-						<option>web development</option>
-						<option>mobile app development</option>
-						<option>graphics designs</option>
-						<option>software development</option>
-						<option>digital marketing</option>
-					</select>
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="form-group col">
 					<label>message</label>
-					<textarea class="form-control" placeholder="message"></textarea>
+					<textarea class="form-control" placeholder="message" style="height: 150px;"></textarea>
 					
 				</div>
 				
 			</div>
 			<div class="form-row align-items-right">
 				<div class="form-group">
-					<button class="btn btn-orange" style="border-radius: 65px;">request</button>
+					<button class="btn btn-orange" style="border-radius: 65px;">send</button>
 					
 				</div>
 				
@@ -529,7 +519,7 @@
 	<div class="container">
 		<div class="mb-4">
 		<div class="card-body text-center">
-			<h3 class="card-title font-weight-bold">
+			<h3 class="card-title font-weight-bold h3-responsive">
 			<span class="text-primary">our</span> <span class="text-warning">pricing</span>
 			</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod
@@ -537,9 +527,9 @@
 		</div>
 		<div class="row" style="height: auto;">
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-				<h4>basic</h4>
+				<h4 class="h4-responsive">basic</h4>
 				<p>
-					<h3 class="font-weight-bold">$65</h3>
+					<h3 class="font-weight-bold h3-responsive">$65</h3>
 				</p>
 				<img src="images/9.jpg" style="height: 200px; width: 200px;" >
 				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod
@@ -547,9 +537,9 @@
 			<a href="#" class="btn btn-success" style="border-radius: 65px;">take a course</a>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-				<h4>basic</h4>
+				<h4 class="h4-responsive">basic</h4>
 				<p>
-					<h3 class="font-weight-bold">$65</h3>
+					<h3 class="font-weight-bold h3-responsive">$65</h3>
 				</p>
 				<img src="images/9.jpg" style="height: 200px; width: 200px;" >
 				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod
@@ -557,9 +547,9 @@
 			<a href="#" class="btn btn-primary" style="border-radius: 65px;">take a course</a>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-				<h4>basic</h4>
+				<h4 class="h4-responsive">basic</h4>
 				<p>
-					<h3 class="font-weight-bold">$65</h3>
+					<h3 class="font-weight-bold h3-responsive">$65</h3>
 				</p>
 				<img src="images/9.jpg" style="height: 200px; width: 200px;" >
 				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod
@@ -567,9 +557,9 @@
 			<a href="#" class="btn btn-brown" style="border-radius: 65px;">take a course</a>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-				<h4>basic</h4>
+				<h4 class="h4-responsive">basic</h4>
 				<p>
-					<h3 class="font-weight-bold">$65</h3>
+					<h3 class="font-weight-bold h3-responsive">$65</h3>
 				</p>
 				<img src="images/9.jpg" style="height: 200px; width: 200px;" >
 				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod
@@ -663,17 +653,9 @@
   	</div>
 	</footer>
 </section>
-
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/mdb.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.menu-toggle').click(function(){
-				$('nav').toggleclass('active')
-			})
-		})
-	</script>
 </body>
 </html>
