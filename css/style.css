@@ -188,5 +188,7 @@ height: 250px;
 	height: auto;
 	display: flex;
 	width: 100%;
-	top: 20px;
+}
+.counter-bg{
+	justify-content: space-around;
 }
