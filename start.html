@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body><section>
-	<header class="topbar">
+		<header class="topbar">
 		<div class="address sticky-top z-depth-2">
 			<div class="d-flex align-items-center" >
 				<span class="d-flex align-items-center justify-content-center" style="height: 35px; width: 35px; border-radius: 50%; background-color: #000080;">
@@ -36,45 +36,45 @@
 				</p>
 			</div>
 		</div>
-		<div class="menu">
 		<nav>
-			<input type="checkbox" id="check">
-			<label for="check" class="checkbtn">
-				<i class="fas fa-bars"></i>
-			</label>
+		<div class="menu">
+			<div>
 			<label class="logo">PromzzYtech</label>
+			</div>
+			<div>
 			<ul>
-				<li><a class="active" href="index.html">Home</a> </li>
+				<li><a class="" href="index.html">Home</a> </li>
 				<li><a href="about.html">About</a> </li>
 				<li><a href="#">Courses</a> </li>
 				<li><a href="#">Services</a> </li>
 				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="start.html" class="" style="background: green;">Getstarted</a> </li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="start.html" class="white-text" style="background: green;">Getstarted</a> </li>
 			</ul>
-		</nav>
-		</div>
+			</div>
+			 </div>
+			 </nav>
 	</header>
 	<section>
 		<div class="start-banner">
-			<div class="container row z-depth-4 box-shadow-5" style="justify-content: space-around;">
-				<div class="card-container ml-3">
-				<div class="lg-col-8 md-col-8 sm-col-12 xs-col-12">
-					<h2 class="h2-responsive white-text" style="text-align: center;">Get Started</h2>
-				<form>	
+			<h2 class="h2-responsive white-text" style="text-align: center; font-size: 50px; font-weight: bolder;">Get Started</h2>
+			<div class="container z-depth-4">
+				<div class="getstarted row">
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<form method="post" data-netlify="true">	
 					<div class="form-row">
-						<div class="form-group lg-col-6 md-col-6 sm-col-12 xs-col-12">
+						<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<input type="text" name="name" placeholder="Full Name" id="name" class="form-control">
 						</div>
-						<div class="form-group lg-col-6 md-col-6 sm-col-12 xs-col-12">
+						<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<input type="email" name="email" placeholder="Email address" id="email" class="form-control">
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group lg-col-6 md-col-6 sm-col-12 xs-col-12">
+						<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<input type="number" name="phone" id="phone" placeholder="Phone No." class="form-control">
 						</div>
-						<div class="form-group lg-col-6 md-col-6 sm-col-12 xs-col-12">
+						<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<input type="name" name="company name" id="company-name" placeholder="Company Name(if applicable)" class="form-control">
 						</div>
 					</div>
@@ -104,7 +104,7 @@
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group lg-col-6 md-col-6 sm-col-12 xs-col-12">
+						<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<select class="form-control">
 								<option selected="">Project Timeframe</option>
 								<option>2 months</option>
@@ -112,7 +112,7 @@
 								<option>4 months+</option>
 							</select>
 						</div>
-						<div class="form-group lg-col-6 md-col-6 sm-col-12 xs-col-12">
+						<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<input type="text" name="budget" id="budget" class="form-control required" placeholder="Your Budget">
 						</div>
 					</div>
@@ -120,13 +120,12 @@
 						<textarea class="form-control" placeholder="Brief Description of your Project*" style="height: 100px;"></textarea>
 					</div>
 					<div class="form-row mb-4" style="float: right;">
-						<button class="btn btn-success" style="border-radius: 20px;">send</button>
+						<button class="btn btn-success" type="submit" style="border-radius: 20px;">send</button>
 					</div>
 				</form>
-				</div>
-				</div>
-				<div class="lg-col-3 md-col-3 sm-col-12 xs-col-12 white-text" style="width: 30%;">
-				<div class="form-right">
+				</div> 
+				<div class="card form-right col-lg-3 col-md-3 col-sm-12 col-xs-12 white-text">
+				<div class="">
 					<ul>
 							<li>
 								<i class="fas fa-map-marker-alt mt-2"></i> <h6>198 West Street, Suite 721 York NY 10016
@@ -143,6 +142,7 @@
 				</div>
 				</div>
 			</div>
+			</div>
 		</div>
 	</section>
 
@@ -154,7 +154,7 @@
 					<h3 class="mt-4 mb-4 text-center" style="text-transform: capitalize;">have a question?</h3>
 					<ul style="list-style: none; padding-left: 0px;">
 						<li class="d-flex">
-							<i class="mr-3 fas fa-map"></i>
+							<i class="mr-3 fas fa-map-marker-alt"></i>
 							<span>198 West Street, Suite 721 York NY 10016</span>
 						</li>
 						<li class="d-flex">
