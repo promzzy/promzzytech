@@ -35,24 +35,24 @@
 				</p>
 			</div>
 		</div>
-		<nav>
-		<div class="menu">
-			<div>
-			<label class="logo">PromzzYtech</label>
-			</div>
-			<div>
-			<ul>
-				<li><a href="index.html">Home</a> </li>
-				<li><a href="about.html">About</a> </li>
-				<li><a href="#">Portfolio</a> </li>
-				<li><a href="#">Services</a> </li>
-				<li><a href="#">Blog</a></li>
-				<li><a class="active" href="contact.html">Contact</a></li>
-				<li><a href="start.html" class="white-text" style="background: green;">Getstarted</a> </li>
-			</ul>
-			</div>
-			 </div>
-			 </nav>
+
+		<div class="log01">PromzzYtech</div>
+		
+ <div class="menu">
+			<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<div class="logo">PromzzYtech</div>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="#">Portfolio</a>
+ `<a href="#">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="start.html" class="white-text" style="background: green;">Getstarted</a>
+</div>
+<span><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="toggle fa fa-bars"></i>
+  </a></span>
+		</div>
 	</header>
 			<div class="contact-us">
 				<div class="text-center">
@@ -62,7 +62,7 @@
 				<div class="container">
 					<div class="contact-bd row">
 						<div class="contact-f z-depth-3 col-lg-8 col-md-8 col-sm-12 col-xs-12">
-							<form method="post" data-netlify="true">
+							<form class="cotact-form" method="post" data-netlify="true">
 								<div class="form-row">
 									<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
 										<input type="text" name="name" id="name" placeholder="Full Name" class="form-control">
@@ -161,7 +161,7 @@
 							<button class="btn btn-blue">subscribe</button>
 						</div>
 					</div>
-					</form>
+					</form class="subscribe-form" method="post" data-netlify="true">
 					<h3 class="mt-4 mb-4 text-center" style="text-transform: capitalize;">
 						connect with us
 					</h3>
@@ -190,6 +190,19 @@
   	</div>
 	</footer>
 </section>
-
+<script type="text/javascript">
+		function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/mdb.js"></script>
 </body>
 </html>

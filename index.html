@@ -36,24 +36,23 @@
 				</p>
 			</div>
 		</div>
-		<nav>
-		<div class="menu">
-			<div>
-			<label class="logo">PromzzYtech</label>
-			</div>
-			<div>
-			<ul>
-				<li><a class="active" href="#">Home</a> </li>
-				<li><a href="about.html">About</a> </li>
-				<li><a href="#">Portfolio</a> </li>
-				<li><a href="#">Services</a> </li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="start.html" class="white-text" style="background: green;">Getstarted</a> </li>
-			</ul>
-			</div>
-			 </div>
-			 </nav>
+		<div class="log01">PromzzYtech</div>
+		
+ <div class="menu">
+			<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<div class="logo">PromzzYtech</div>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="#">Portfolio</a>
+ `<a href="#">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="start.html" class="white-text" style="background: green;">Getstarted</a>
+</div>
+<span><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="toggle fa fa-bars"></i>
+  </a></span>
+		</div>
 	</header>
 	<div class="my-carousel" style="z-index: -1;">
 	<!--Carousel Wrapper-->
@@ -240,7 +239,7 @@
 			<p class="card-text">
 			We at PromzzY-Tech design and build exquisite Websites,Software and Mobile Applications that would suit YOU. With well experienced hands on your work, you can trust us with stunning front-end designs that are user friendly and contents that would attract users. Designs are top notch Unbeatable Value Exceptional design.
 			</p>
-			<a href="#" class="btn btn-orange" style="border-radius: 35px;"> Read More</a>
+			<a href="about.html" class="btn btn-orange" style="border-radius: 35px;"> Read More</a>
 		</div>
 
 </section>
@@ -379,7 +378,7 @@
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 					<h3 class="mt-4 mb-4 text-center" style="text-transform: capitalize;">subscribe</h3>
-					<form>
+					<form class="subscribe-form" method="post" data-netlify="true">
 					<div class="form-row">
 						<div class="form-group col">
 							<input type="email" name="email" placeholder="Enter Email Address" class="form-control">
@@ -419,6 +418,16 @@
   	</div>
 	</footer>
 </section>
+	<script type="text/javascript">
+		function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.js"></script>
